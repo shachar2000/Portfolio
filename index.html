@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/3edcdc07e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="about_me">
+    <h1>Shachar Avraham - Portfolio</h1>
+    <p> DevOps Engineer with a strong foundation in cloud infrastructure, automation, and CI/CD processes,
+        gained through intensive coursework and hands-on project experience.
+        Skilled in developing and automating CI/CD pipelines, managing source code with Git, and utilizing tools such as
+        Docker, Kubernetes, Jenkins, Ansible, and Terraform.
+        Experienced in deploying, maintaining, and administering Linux, Windows, and cloud-based servers.
+        Currently pursuing AWS Solution Architect certification to deepen expertise in cloud technologies.
+        A fast self-learner with excellent interpersonal skills, capable of working both independently and collaboratively,
+        and driven to contribute to innovative projects and continuously grow within the DevOps field.</p>
+    <button class="github-projects-button" onclick="window.open('https://github.com/shachar2000', '_blank')"> <i class="fa-brands fa-github"></i> GitHub</button>
+    <button class="linkdin-projects-button" onclick="window.open('https://www.linkedin.com/in/shachar-avraham-261669308/', '_blank')"> <i class="fa-brands fa-linkedin"></i> Linkedin</button>
+</header>
+<section class="section1">
+    <h1>My Projects:</h1>
+    <div class="flex-container">
+    <div class="my_project">
+        <h3>Telegram Bot:</h3>
+        <p> This project showcases a Telegram bot capable of analyzing images sent to it using the YOLOv5 AI model.
+            The bot detects objects in the image and returns a list of identified objects to the user.
+            The project demonstrates advanced DevOps skills, including Infrastructure as Code (IaC) in AWS using Terraform.
+            Additionally, the connection and deployment process is fully managed with Ansible.
+            Ansible enables automating the deployment of the Telegram bot.
+            This ensures a streamlined, efficient deployment process, guaranteeing that the Telegram bot operates optimally on every cloud instance.</p>
+        <p>Technologies used: AWS, Terraform, Ansible, Docker, GitHub Actions, Linux Command-Line.</p>
+        <button class="github-projects-button" onclick="window.open('https://github.com/shachar2000/polybot_service', '_blank')">
+            <i class="fa-brands fa-github"></i> GitHub</button>
+    </div>
+
+    <div class="my_project">
+        <h3>Streaming (Netflix) Website:</h3>
+        <p> In this project, I developed and deployed a Netflix-style microservices application using Docker, Kubernetes, Jenkins, and ArgoCD.
+            The project involved containerizing microservices, setting up a CI/CD pipeline for automated deployments,
+            and implementing GitOps practices with ArgoCD for continuous deployment management.
+            I used Jenkins to automate the building and pushing of Docker images to DockerHub and Kubernetes for orchestration.
+            The objective was to create a fully automated, scalable solution for deploying
+            and managing microservices in a cloud-native environment, ensuring high availability and efficient scaling.
+        </p>
+        <p>Technologies used: GitHub, Jenkins, Docker, YAML, ArgoCD, Kubernetes.</p>
+        <button class="github-projects-button" onclick="window.open('https://github.com/shachar2000/NetflixInfra', '_blank')">
+            <i class="fa-brands fa-github"></i> GitHub</button>
+    </div>
+
+    <div class="my_project">
+        <h3>Disco:</h3>
+        <p> The Disco Project, developed in collaboration with Octopus Computer Solutions,
+            provides an efficient solution for managing Docker images in air-gapped environments.
+            This project was part of my studies at ORT Tel Aviv College and was successfully submitted
+            and evaluated by MAHAT (The Israeli Ministry of Labor and Social Affairs).
+            The system features the ability to display image statistics by registry, copy images between registries,
+            and migrate images in Kubernetes while maintaining the operational stability of the cluster.
+            In this project, I focused on ensuring full automation through advanced CI/CD pipelines (GitHub Actions)
+            and comprehensive unit testing. Originally designed for internal company use,
+            this project is set to become an open-source solution,
+            and I am proud to have contributed to its development and to making it available to the broader community.
+        </p>
+        <p>Technologies used: Kubernetes, Helm, Python, PyTest, GitHub Actions, Docker, YAML.</p>
+        <button class="github-projects-button" onclick="window.open('https://github.com/shachar2000/disko', '_blank')">
+            <i class="fa-brands fa-github"></i> GitHub</button>
+    </div>
+</div>
+</section>
+
+</body>
+</html>
