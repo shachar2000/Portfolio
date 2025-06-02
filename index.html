@@ -1,77 +1,165 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/3edcdc07e1.js" crossorigin="anonymous"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Shachar Avraham | DevOps Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<script src="https://kit.fontawesome.com/3edcdc07e1.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCAz3prLg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body>
-<header class="about_me">
-    <h1>Shachar Avraham - Portfolio</h1>
-    <p> DevOps Engineer with a strong foundation in cloud infrastructure, automation, and CI/CD processes,
+
+<header class="fade-in">
+    <h1>Shachar Avraham</h1>
+    <h2>DevOps Engineer & Cloud Enthusiast</h2>
+    <p>
+        DevOps Engineer with a strong foundation in cloud infrastructure, automation, and CI/CD processes,
         gained through intensive coursework and hands-on project experience.
         Skilled in developing and automating CI/CD pipelines, managing source code with Git, and utilizing tools such as
         Docker, Kubernetes, Jenkins, Ansible, and Terraform.
         Experienced in deploying, maintaining, and administering Linux, Windows, and cloud-based servers.
         Currently pursuing AWS Solution Architect certification to deepen expertise in cloud technologies.
         A fast self-learner with excellent interpersonal skills, capable of working both independently and collaboratively,
-        and driven to contribute to innovative projects and continuously grow within the DevOps field.</p>
-    <button class="github-projects-button" onclick="window.open('https://github.com/shachar2000', '_blank')"> <i class="fa-brands fa-github"></i> GitHub</button>
-    <button class="linkdin-projects-button" onclick="window.open('https://www.linkedin.com/in/shachar-avraham-261669308/', '_blank')"> <i class="fa-brands fa-linkedin"></i> Linkedin</button>
-</header>
-<section class="section1">
-    <h1>My Projects:</h1>
-    <div class="flex-container">
-    <div class="my_project">
-        <h3>Telegram Bot:</h3>
-        <p> This project showcases a Telegram bot capable of analyzing images sent to it using the YOLOv5 AI model.
-            The bot detects objects in the image and returns a list of identified objects to the user.
-            The project demonstrates advanced DevOps skills, including Infrastructure as Code (IaC) in AWS using Terraform.
-            Additionally, the connection and deployment process is fully managed with Ansible.
-            Ansible enables automating the deployment of the Telegram bot.
-            This ensures a streamlined, efficient deployment process, guaranteeing that the Telegram bot operates optimally on every cloud instance.</p>
-        <p>Technologies used: AWS, Terraform, Ansible, Docker, GitHub Actions, Linux Command-Line.</p>
-        <button class="github-projects-button" onclick="window.open('https://github.com/shachar2000/polybot_service', '_blank')">
-            <i class="fa-brands fa-github"></i> GitHub</button>
-    </div>
+        and driven to contribute to innovative projects and continuously grow within the DevOps field.
+    </p>
+    <div class="btn-group">
+      <button onclick="window.open('https://github.com/shachar2000', '_blank', 'noopener,noreferrer')" class="btn-animate github">
+        <i class="fa-brands fa-github"></i> GitHub
+      </button>
+      <button onclick="window.open('https://www.linkedin.com/in/shachar-avraham-261669308/', '_blank', 'noopener,noreferrer')" class="btn-animate linkedin">
+        <i class="fa-brands fa-linkedin"></i> LinkedIn
+      </button>
+    </div>  
+  </header>
+  
 
-    <div class="my_project">
-        <h3>Streaming (Netflix) Website:</h3>
-        <p> In this project, I developed and deployed a Netflix-style microservices application using Docker, Kubernetes, Jenkins, and ArgoCD.
-            The project involved containerizing microservices, setting up a CI/CD pipeline for automated deployments,
-            and implementing GitOps practices with ArgoCD for continuous deployment management.
-            I used Jenkins to automate the building and pushing of Docker images to DockerHub and Kubernetes for orchestration.
-            The objective was to create a fully automated, scalable solution for deploying
-            and managing microservices in a cloud-native environment, ensuring high availability and efficient scaling.
-        </p>
-        <p>Technologies used: GitHub, Jenkins, Docker, YAML, ArgoCD, Kubernetes.</p>
-        <button class="github-projects-button" onclick="window.open('https://github.com/shachar2000/NetflixInfra', '_blank')">
-            <i class="fa-brands fa-github"></i> GitHub</button>
-    </div>
+<main>
+  <h2 class="fade-in delay-1">My Projects</h2>
 
-    <div class="my_project">
-        <h3>Disco:</h3>
-        <p> The Disco Project, developed in collaboration with Octopus Computer Solutions,
-            provides an efficient solution for managing Docker images in air-gapped environments.
-            This project was part of my studies at ORT Tel Aviv College and was successfully submitted
-            and evaluated by MAHAT (The Israeli Ministry of Labor and Social Affairs).
-            The system features the ability to display image statistics by registry, copy images between registries,
-            and migrate images in Kubernetes while maintaining the operational stability of the cluster.
-            In this project, I focused on ensuring full automation through advanced CI/CD pipelines (GitHub Actions)
-            and comprehensive unit testing. Originally designed for internal company use,
-            this project is set to become an open-source solution,
-            and I am proud to have contributed to its development and to making it available to the broader community.
-        </p>
-        <p>Technologies used: Kubernetes, Helm, Python, PyTest, GitHub Actions, Docker, YAML.</p>
-        <button class="github-projects-button" onclick="window.open('https://github.com/shachar2000/disko', '_blank')">
-            <i class="fa-brands fa-github"></i> GitHub</button>
-    </div>
-</div>
-</section>
+  <section class="projects">
+
+    <article class="project-card fade-in delay-2">
+      <h3>Ordivo - Complete Ordering System</h3>
+      <p>
+        The Ordivo project is a modern and complex ordering system operating in a distributed, cloud-based environment.
+        The system includes a cross-platform Flutter app and a powerful Node.js backend server with JWT authentication and a MySQL database managed on AWS RDS.
+        The infrastructure is managed as code using Terraform for AWS deployment, with full automation of deployment and management carried out using Ansible.
+        The project features an advanced monitoring system with Prometheus and Grafana, and sophisticated logging through Elasticsearch and Kibana.
+        All build and deployment processes are continuously managed using GitHub Actions, ensuring reliability, security, and high operational efficiency.
+      </p>
+      <p>
+        <strong>Technologies:</strong> 
+        <i class="fa-brands fa-aws" style="color:#FF9900;"></i> AWS, 
+        <i class="fa-solid fa-cloud" style="color:#623FE5;"></i> Terraform, 
+        <i class="devicon-ansible-plain colored"></i> Ansible, 
+        <i class="fa-brands fa-docker" style="color:#0DB7ED;"></i> Docker, 
+        <i class="fa-brands fa-node-js" style="color:#68A063;"></i> Node.js, 
+        <i class="fa-brands fa-dev" style="color:#02569B;"></i> Flutter, 
+        <i class="fa-solid fa-database" style="color:#4479A1;"></i> MySQL, 
+        <i class="fa-solid fa-chart-line" style="color:#E6522C;"></i> Prometheus, 
+        <i class="fa-solid fa-chart-area" style="color:#F46800;"></i> Grafana, 
+        <i class="fa-solid fa-magnifying-glass" style="color:#00BFB3;"></i> Elasticsearch, 
+        <i class="fa-solid fa-chart-bar" style="color:#00BFB3;"></i> Kibana,
+        <i class="fa-brands fa-github" style="color:#181717;"></i>GitHub Actions
+      </p>
+      <button onclick="window.open('https://github.com/shachar2000/OrderingApp', '_blank', 'noopener,noreferrer')" class="btn-animate github">
+        <i class="fa-brands fa-github"></i> View Code
+      </button>
+    </article>
+
+    <article class="project-card fade-in delay-3">
+      <h3>Telegram Bot</h3>
+      <p>
+        This project showcases a Telegram bot capable of analyzing images sent to it using the YOLOv5 AI model.
+        The bot detects objects in the image and returns a list of identified objects to the user.
+        The project demonstrates advanced DevOps skills, including Infrastructure as Code (IaC) in AWS using Terraform.
+        Additionally, the connection and deployment process is fully managed with Ansible.
+        Ansible enables automating the deployment of the Telegram bot.
+        This ensures a streamlined, efficient deployment process, guaranteeing that the Telegram bot operates optimally on every cloud instance.
+      </p>
+      <p>
+        <strong>Technologies:</strong> 
+        <i class="fa-brands fa-aws" style="color:#FF9900;"></i> AWS, 
+        <i class="fa-solid fa-cloud" style="color:#623FE5;"></i> Terraform, 
+        <i class="devicon-ansible-plain colored"></i> Ansible, 
+        <i class="fa-brands fa-docker" style="color:#0DB7ED;"></i> Docker, 
+        <i class="fa-brands fa-linux" style="color:#FCC624;"></i> Linux CLI, 
+        <i class="fa-brands fa-github" style="color:#181717;"></i> GitHub Actions
+      </p>
+      <button onclick="window.open('https://github.com/shachar2000/polybot_service', '_blank', 'noopener,noreferrer')" class="btn-animate github">
+        <i class="fa-brands fa-github"></i> View Code
+      </button>
+    </article>
+
+    <article class="project-card fade-in delay-4">
+      <h3>Streaming (Netflix) Website:</h3>
+      <p>
+        In this project, I developed and deployed a Netflix-style microservices application using Docker, Kubernetes, Jenkins, and ArgoCD.
+        The project involved containerizing microservices, setting up a CI/CD pipeline for automated deployments, 
+        and implementing GitOps practices with ArgoCD for continuous deployment management.
+        I used Jenkins to automate the building and pushing of Docker images to DockerHub and Kubernetes for orchestration.
+        The objective was to create a fully automated, scalable solution for deploying and managing microservices in a cloud-native environment, 
+        ensuring high availability and efficient scaling.
+      </p>
+      <p>
+        <strong>Technologies:</strong> 
+        <i class="fa-brands fa-jenkins" style="color:#D24939;"></i> Jenkins, 
+        <i class="fa-brands fa-docker" style="color:#0DB7ED;"></i> Docker, 
+        <i class="fa-brands fa-kubernetes" style="color:#326CE5;"></i> Kubernetes, 
+        <i class="fa-solid fa-gear" style="color:#EF2D5E;"></i> ArgoCD, 
+        <i class="fa-brands fa-github" style="color:#181717;"></i> GitHub, 
+        <i class="fa-solid fa-file-code" style="color:#3F51B5;"></i> YAML
+      </p>
+      <button onclick="window.open('https://github.com/shachar2000/NetflixInfra', '_blank', 'noopener,noreferrer')" class="btn-animate github">
+        <i class="fa-brands fa-github"></i> View Code
+      </button>
+    </article>
+
+    <article class="project-card fade-in delay-5">
+      <h3>Disco - Docker Image Management</h3>
+      <p>
+        The Disco Project, developed in collaboration with Octopus Computer Solutions,
+        provides an efficient solution for managing Docker images in air-gapped environments.
+        This project was part of my studies at ORT Tel Aviv College and was successfully submitted and evaluated
+        by MAHAT (The Israeli Ministry of Labor and Social Affairs).
+        The system features the ability to display image statistics by registry, copy images between registries,
+        and migrate images in Kubernetes while maintaining the operational stability of the cluster. In this project,
+        I focused on ensuring full automation through advanced CI/CD pipelines (GitHub Actions) and comprehensive unit testing.
+        Originally designed for internal company use, this project is set to become an open-source solution,
+        and I am proud to have contributed to its development and to making it available to the broader community.
+      </p>
+      <p>
+        <strong>Technologies:</strong> 
+        <i class="fa-brands fa-kubernetes" style="color:#326CE5;"></i> Kubernetes, 
+        <i class="fa-solid fa-ship" style="color:#0F1689;"></i> Helm, 
+        <i class="fa-brands fa-python" style="color:#3776AB;"></i> Python, 
+        <i class="fa-solid fa-vial" style="color:#4B8BBE;"></i> PyTest, 
+        <i class="fa-brands fa-github" style="color:#181717;"></i> GitHub Actions, 
+        <i class="fa-brands fa-docker" style="color:#0DB7ED;"></i> Docker, 
+        <i class="fa-solid fa-file-code" style="color:#3F51B5;"></i> YAML
+      </p>
+      <button onclick="window.open('https://github.com/shachar2000/disko', '_blank', 'noopener,noreferrer')" class="btn-animate github">
+        <i class="fa-brands fa-github"></i> View Code
+      </button>
+    </article>
+
+  </section>
+</main>
+
+<footer class="fade-in delay-6" style="text-align:center; margin-top: 80px; padding: 40px 20px; background-color: #f0f4ff; border-radius: 16px;">
+    <h2 style="font-size: 2rem; margin-bottom: 10px; color: #111;">Resume</h2>
+    <p style="max-width: 600px; margin: 0 auto 30px auto; font-size: 1.1rem; color: #444;">
+      Download my resume for a summary of my professional experience in DevOps, cloud, automation, and infrastructure management.
+    </p>
+    <a href="שחר אברהם DEVOPS 2025 .pdf" download class="btn-animate download-cv" style="font-size: 1.2rem; padding: 14px 40px;">
+      <i class="fa-solid fa-download"></i> Download Resume
+    </a>
+  </footer>
+  
+  
 
 </body>
 </html>
